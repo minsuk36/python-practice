@@ -27,3 +27,13 @@ nb = python.index("n",nb +1)
 print(nb)
 print(python.find("java"))
 print(python.count("n"))
+
+#규칙 1: http://부분은 제외
+#규칙 2 : 처음만나는 점(.) 이후 부분은 제외
+
+
+
+a = "http://naver.com"
+b = a.replace("http://","")
+b = b[:b.index(".")]
+print(a+"의 비밀번호는"+b[:3]+str(len(b))+str(b.count("e"))+"!"+"입니다.")
